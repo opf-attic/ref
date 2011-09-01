@@ -6,6 +6,9 @@ function perform_scan($path,$tool_id) {
 	$now = time();
 	$report_file = "/tmp/file_$now.txt";
 	$cmd = "file $path* > $report_file";
+	if (is_dir($path)) {
+		$cmd = 'find ' . $path . '* -name "*.*" | file  -f - > '.$report_file;
+	}
 	$ret = exec($cmd,$output);
 	echo "SCAN COMPLETE, processing results. \n\n";
 	process_results($path,$tool_id,$report_file);
