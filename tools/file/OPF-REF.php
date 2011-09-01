@@ -1,5 +1,7 @@
 <?php
 
+require_once('common_functions.inc.php');
+
 function perform_scan($path,$tool_id) {
 	$now = time();
 	$report_file = "/tmp/file_$now.txt";
@@ -73,24 +75,6 @@ function process_results($path,$tool_id,$report_file) {
 		}
 
 	}
-}
-
-function clean_up($model,$tool_id,$file_id) {
-	$query = "select id,raw_result_id from results where tool_id=$tool_id and file_id=$file_id;";
-	$res = mysql_query($query);
-
-	$array = mysql_fetch_array($res);
-
-	$result_id = $array["id"];
-	$query = 'delete from raw_results where id='.$result_id.';';				
-	$res2 = mysql_query($query);
-	$query = "delete from results where tool_id=$tool_id and file_id=$file_id;";				
-	$res2 = mysql_query($query);
-# DELETE ALL PROCESSED DATA ALREADY PRESENT 
-	$query = 'delete from triples where model="'.$model.'"';
-	$res2 = mysql_query($query);
-
-
 }
 
 ?>
