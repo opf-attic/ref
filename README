@@ -1,3 +1,11 @@
+Requirements
+============
+* php-cli
+* php-mysql
+* mysql-server
+
+Synopsis
+========
 cd database_structure
 echo "create database opf_ref" | mysql -u root
 mysql -u root opf_ref < opf_ref.sql
@@ -8,3 +16,46 @@ php import_tool.php absolute_path/tools/file/INFO
 CREATE SOME DATA IN THE DATA DIRECTORY (pref in a new dir e.g. mydata1)
 
 php run_scan.php absolute_path/data/mydata1/
+
+php create_rdf.php (creates rdf in the www directory, add it to an rdf store and navigate the nice pretty linked data)
+
+About Tools
+==========
+Version numbers are:
+ * Major.Minor.Bugfix-Signature_File_Version
+
+In order to add tools you need to download the tool into it's own directory under tools.
+At this point you need to create an INFO file detailing the tool (see an existing one).
+Additionally, and this is the hard bit, you need to write an OPF-REF.php script which contains the function perform_scan($path,$tool_id), which performs the scan using that tools and processes the results. The best way to write one of these is to adapt an existing example. 
+
+About the Database
+==================
+The database is purely used as a cache store from which the rdf and linked-data can be built. 
+The model works roughly as follows:
+
+Files table
+ * 1 entry per file on disk in the data directory
+
+Tools table
+ * The tools and data from their info files (may be removed)
+
+Raw_Results table
+ * Use it to store the raw_result which the tools outputs corresponding to that file
+
+Results table
+ * Stores the refences between the tool, file, results and raw_results ids.
+
+Triples table
+ * All the subject/predicate/object triples are stored here e.g.
+ ** results/1 file:mime-type msword
+   So result id 1 has a mime-type msword.
+ * You can put what you like in this table, here is an example of what droid does when it finds multiple matches.
+ ** results/2 droid:hasHit hit/1
+ ** results/2 droid:hasHit hit/2
+ ** hit/1 droid:puid fmt/40
+ ** hit/2 droid:puid fmt/41
+
+=======
+Explore, have fun, but use the data, don't extend this code too much, there is no point unless you want to generate a whole load more data!
+
+data data data
