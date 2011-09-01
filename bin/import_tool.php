@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 	ini_set('include_path','.:../:../lib/:../etc/');
 	require_once('database_connector.php');

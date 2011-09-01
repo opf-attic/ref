@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 	$opf_ontology = "http://data.openplanetsfoundation.org/ref/ontology/#";
 	$rdf_prefix = "http://data.openplanetsfoundation.org/ref/";
@@ -14,7 +15,7 @@
 	while ($array = mysql_fetch_array($res)) {
 		$files_agg[] = $rdf_prefix . $array["relative_full_path"];
 		
-		$main[$array["relative_full_path"]] .= '<rdf:Description rdf:about="' . $rdf_prefix . $array["relative_full_path"] . '"' . ">\n";
+		$main[$array["relative_full_path"]] = '<rdf:Description rdf:about="' . $rdf_prefix . $array["relative_full_path"] . '"' . ">\n";
 
 		process_file($array["id"],$array["relative_full_path"]);
 		$query2 = "select id,datestamp,tool_id,raw_result_id from results where file_id=" . $array["id"] . ";";
@@ -88,7 +89,7 @@
 		global $main, $results, $rdf_prefix, $extensions_done;
 
 		$extension = substr($path,strrpos($path,".")+1,strlen($path));
-		@$results["extension/" . $extension] .= "\t" . '<ore:aggregates rdf:resource="' . $rdf_prefix . $path .'"' . "/>\n";
+		$results["extension/" . $extension] .= "\t" . '<ore:aggregates rdf:resource="' . $rdf_prefix . $path .'"' . "/>\n";
 		if ($extensions_done[$extension] < 1) {
 			@$results["extension/index"] .= "\t" . '<ore:aggregates rdf:resource="' . $rdf_prefix . 'extension/' . $extension . '"' . "/>\n";
 			$extensions_done[$extension] = 1;

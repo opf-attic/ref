@@ -1,4 +1,6 @@
 <?php
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	
 	$i=1;
 	$functions[$i]["function"] = "process_droid_4_results";
 	$functions[$i]["description"] = "DROID 4.X results processor";

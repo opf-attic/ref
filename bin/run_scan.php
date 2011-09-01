@@ -1,5 +1,6 @@
 <?php
-
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);
+	
 	$count = 0;
 	
 	ini_set('include_path','.:../:../lib/:../etc/');
