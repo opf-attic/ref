@@ -1,0 +1,10 @@
+cd database_structure
+echo "create database opf_ref" | mysql -u root
+mysql -u root opf_ref < opf_ref.sql
+cd ..
+cd bin
+php import_tool.php absolute_path/tools/file/INFO
+
+CREATE SOME DATA IN THE DATA DIRECTORY (pref in a new dir e.g. mydata1)
+
+php run_scan.php absolute_path/data/mydata1/
