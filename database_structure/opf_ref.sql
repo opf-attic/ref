@@ -27,7 +27,7 @@ CREATE TABLE `files` (
   `name` varchar(255) DEFAULT NULL,
   `relative_full_path` blob,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2031 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,13 +52,13 @@ DROP TABLE IF EXISTS `results`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `results` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` varchar(255) NOT NULL,
   `datestamp` int(11) NOT NULL,
   `tool_id` int(11) DEFAULT NULL,
   `file_id` int(11) DEFAULT NULL,
   `raw_result_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=28975 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`,`raw_result_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,8 +73,9 @@ CREATE TABLE `tools` (
   `name` varchar(255) DEFAULT NULL,
   `version` varchar(255) DEFAULT NULL,
   `relative_path` varchar(255) DEFAULT NULL,
+  `date` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
