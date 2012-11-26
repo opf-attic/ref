@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileCollection xmlns="http://www.nationalarchives.gov.uk/pronom/FileCollection">
+  <DROIDVersion>4.0</DROIDVersion>
+  <SignatureFileVersion>18</SignatureFileVersion>
+  <DateCreated>2012-11-23T15:04:21</DateCreated>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Not identified" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/README</FilePath>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+  <IdentificationFile IdentQuality="Positive" >
+    <FilePath>/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf</FilePath>
+    <FileFormatHit>
+      <Status>Positive (Specific Format)</Status>
+      <Name>Portable Document Format</Name>
+      <Version>1.4</Version>
+      <PUID>fmt/18</PUID>
+      <MimeType>application/pdf</MimeType>
+    </FileFormatHit>
+  </IdentificationFile>
+</FileCollection>

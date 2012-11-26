@@ -1,0 +1,560 @@
+2012-08-10 08:43:21,101  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:43:22,066  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:43:22,745  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344584602038/db]
+2012-08-10 08:43:33,395  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:43:34,173  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:43:34,333  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:43:34,496  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:43:34,690  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:43:34,692  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:43:34,916  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:43:34,922  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:43:34,931  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:43:35,003  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:43:35,008  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:43:35,010  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:43:35,093  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:43:35,096  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344584602038/db]
+2012-08-10 08:43:35,473  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344584602038/db' shutdown.
+2012-08-10 08:43:35,474  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344584602038/db]
+2012-08-10 08:43:35,475  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:43:35,479  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344584602038] to [/tmp/droid5.0.3-51_1344584598.droid]
+2012-08-10 08:43:35,737  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344584602038/db]
+2012-08-10 08:43:35,797  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:43:35,799  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344584602038
+2012-08-10 08:43:35,814  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344584602038/db]
+2012-08-10 08:43:35,884  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344584602038/db' shutdown.
+2012-08-10 08:43:35,885  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344584602038/db]
+2012-08-10 08:43:38,673  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:43:40,543  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344584619727/db]
+2012-08-10 08:43:47,013  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344584619727]: 853 ms
+2012-08-10 08:43:47,014  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:43:47,015  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344584619727
+2012-08-10 08:43:47,026  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344584619727/db]
+2012-08-10 08:43:47,084  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344584619727/db' shutdown.
+2012-08-10 08:43:47,085  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344584619727/db]
+2012-08-10 08:48:23,414  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:48:24,385  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:48:25,123  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344584904358/db]
+2012-08-10 08:48:35,466  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:48:36,214  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:48:36,358  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:48:36,488  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:48:36,712  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:48:36,713  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:48:36,920  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:48:36,930  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:48:36,922  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:48:37,006  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:48:37,012  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:48:37,010  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:48:37,114  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:48:37,225  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344584904358/db]
+2012-08-10 08:48:37,642  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344584904358/db' shutdown.
+2012-08-10 08:48:37,643  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344584904358/db]
+2012-08-10 08:48:37,644  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:48:37,649  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344584904358] to [/tmp/droid5.0.3-51_1344584900.droid]
+2012-08-10 08:48:37,850  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344584904358/db]
+2012-08-10 08:48:37,893  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:48:37,894  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344584904358
+2012-08-10 08:48:37,899  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344584904358/db]
+2012-08-10 08:48:37,935  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344584904358/db' shutdown.
+2012-08-10 08:48:37,936  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344584904358/db]
+2012-08-10 08:48:40,492  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:48:42,205  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344584921426/db]
+2012-08-10 08:48:48,644  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344584921426]: 934 ms
+2012-08-10 08:48:48,645  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:48:48,646  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344584921426
+2012-08-10 08:48:48,656  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344584921426/db]
+2012-08-10 08:48:48,706  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344584921426/db' shutdown.
+2012-08-10 08:48:48,707  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344584921426/db]
+2012-08-10 08:52:21,490  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:52:22,484  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:52:23,167  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585142457/db]
+2012-08-10 08:52:34,636  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:52:35,489  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:52:35,609  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:52:35,757  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:52:35,985  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:52:35,989  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:52:36,192  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:52:36,193  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:52:36,238  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:52:36,275  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:52:36,262  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:52:36,281  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:52:36,382  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:52:36,384  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585142457/db]
+2012-08-10 08:52:36,825  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585142457/db' shutdown.
+2012-08-10 08:52:36,826  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585142457/db]
+2012-08-10 08:52:36,826  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:52:36,828  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585142457] to [/tmp/droid5.0.3-51_1344585138.droid]
+2012-08-10 08:52:37,024  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585142457/db]
+2012-08-10 08:52:37,067  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:52:37,077  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585142457
+2012-08-10 08:52:37,082  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585142457/db]
+2012-08-10 08:52:37,183  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585142457/db' shutdown.
+2012-08-10 08:52:37,184  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585142457/db]
+2012-08-10 08:52:39,969  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:52:41,764  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585160985/db]
+2012-08-10 08:52:47,665  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344585160985]: 907 ms
+2012-08-10 08:52:47,666  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:52:47,667  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585160985
+2012-08-10 08:52:47,676  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585160985/db]
+2012-08-10 08:52:47,733  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585160985/db' shutdown.
+2012-08-10 08:52:47,735  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585160985/db]
+2012-08-10 08:54:18,763  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:54:19,689  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:54:20,424  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585259660/db]
+2012-08-10 08:54:31,556  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:54:32,349  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:54:32,473  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:54:32,610  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:54:32,883  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:54:32,896  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:54:33,181  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:54:33,183  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:54:33,210  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:54:33,260  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:54:33,264  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:54:33,262  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:54:33,420  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:54:33,423  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585259660/db]
+2012-08-10 08:54:33,830  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585259660/db' shutdown.
+2012-08-10 08:54:33,831  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585259660/db]
+2012-08-10 08:54:33,832  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:54:33,836  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585259660] to [/tmp/droid5.0.3-51_1344585256.droid]
+2012-08-10 08:54:34,087  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585259660/db]
+2012-08-10 08:54:34,136  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:54:34,137  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585259660
+2012-08-10 08:54:34,149  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585259660/db]
+2012-08-10 08:54:34,180  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585259660/db' shutdown.
+2012-08-10 08:54:34,181  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585259660/db]
+2012-08-10 08:54:36,786  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:54:38,507  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585277705/db]
+2012-08-10 08:54:44,878  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344585277705]: 848 ms
+2012-08-10 08:54:44,879  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:54:44,880  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585277705
+2012-08-10 08:54:44,889  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585277705/db]
+2012-08-10 08:54:44,941  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585277705/db' shutdown.
+2012-08-10 08:54:44,943  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585277705/db]
+2012-08-10 08:56:38,916  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:56:39,863  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:56:40,581  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585399829/db]
+2012-08-10 08:56:51,234  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:56:52,002  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:56:52,165  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:56:52,284  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:56:52,485  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:56:52,493  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:56:52,728  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:56:52,736  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:56:52,730  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:56:52,820  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:56:52,823  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:56:52,821  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:56:52,938  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:56:52,941  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585399829/db]
+2012-08-10 08:56:53,351  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585399829/db' shutdown.
+2012-08-10 08:56:53,352  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585399829/db]
+2012-08-10 08:56:53,353  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:56:53,355  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585399829] to [/tmp/droid5.0.3-51_1344585396.droid]
+2012-08-10 08:56:53,559  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585399829/db]
+2012-08-10 08:56:53,606  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:56:53,613  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585399829
+2012-08-10 08:56:53,619  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585399829/db]
+2012-08-10 08:56:53,709  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585399829/db' shutdown.
+2012-08-10 08:56:53,710  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585399829/db]
+2012-08-10 08:56:56,407  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:56:58,166  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585417303/db]
+2012-08-10 08:57:04,621  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344585417303]: 946 ms
+2012-08-10 08:57:04,622  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:57:04,623  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585417303
+2012-08-10 08:57:04,632  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585417303/db]
+2012-08-10 08:57:04,687  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585417303/db' shutdown.
+2012-08-10 08:57:04,689  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585417303/db]
+2012-08-10 08:58:19,494  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:58:20,548  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:58:21,230  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585500526/db]
+2012-08-10 08:58:32,123  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:58:33,038  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:58:33,189  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:58:33,365  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:58:33,623  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:58:33,625  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:58:33,868  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:58:33,878  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:58:33,906  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:58:33,959  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:58:33,963  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:58:33,962  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:58:34,050  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:58:34,052  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585500526/db]
+2012-08-10 08:58:34,418  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585500526/db' shutdown.
+2012-08-10 08:58:34,419  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585500526/db]
+2012-08-10 08:58:34,419  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:58:34,424  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585500526] to [/tmp/droid5.0.3-51_1344585495.droid]
+2012-08-10 08:58:34,680  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585500526/db]
+2012-08-10 08:58:34,728  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:58:34,733  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585500526
+2012-08-10 08:58:34,746  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585500526/db]
+2012-08-10 08:58:34,770  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585500526/db' shutdown.
+2012-08-10 08:58:34,771  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585500526/db]
+2012-08-10 08:58:37,620  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:58:39,397  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585518551/db]
+2012-08-10 08:58:45,556  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344585518551]: 897 ms
+2012-08-10 08:58:45,557  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:58:45,558  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585518551
+2012-08-10 08:58:45,569  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585518551/db]
+2012-08-10 08:58:45,623  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585518551/db' shutdown.
+2012-08-10 08:58:45,624  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585518551/db]
+2012-08-10 08:59:24,422  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:59:25,247  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 08:59:25,958  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585565222/db]
+2012-08-10 08:59:36,400  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 08:59:37,074  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 08:59:37,209  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 08:59:37,355  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 08:59:37,577  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 08:59:37,581  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 08:59:37,780  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 08:59:37,786  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 08:59:37,792  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 08:59:37,851  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 08:59:37,853  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 08:59:37,852  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 08:59:37,956  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 08:59:37,958  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585565222/db]
+2012-08-10 08:59:38,361  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585565222/db' shutdown.
+2012-08-10 08:59:38,363  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585565222/db]
+2012-08-10 08:59:38,364  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 08:59:38,366  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585565222] to [/tmp/droid5.0.3-51_1344585562.droid]
+2012-08-10 08:59:38,558  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585565222/db]
+2012-08-10 08:59:38,608  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 08:59:38,617  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585565222
+2012-08-10 08:59:38,624  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585565222/db]
+2012-08-10 08:59:38,704  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585565222/db' shutdown.
+2012-08-10 08:59:38,705  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585565222/db]
+2012-08-10 08:59:41,337  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 08:59:43,008  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585582353/db]
+2012-08-10 08:59:48,512  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344585582353]: 793 ms
+2012-08-10 08:59:48,513  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 08:59:48,514  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585582353
+2012-08-10 08:59:48,523  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585582353/db]
+2012-08-10 08:59:48,566  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585582353/db' shutdown.
+2012-08-10 08:59:48,567  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585582353/db]
+2012-08-10 09:03:26,295  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:03:27,229  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:03:27,900  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585807206/db]
+2012-08-10 09:03:38,638  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:03:39,429  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:03:39,597  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:03:39,765  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:03:39,990  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:03:39,991  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:03:40,213  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:03:40,217  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:03:40,225  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:03:40,292  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:03:40,295  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:03:40,294  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:03:40,432  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:03:40,435  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585807206/db]
+2012-08-10 09:03:40,810  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585807206/db' shutdown.
+2012-08-10 09:03:40,812  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585807206/db]
+2012-08-10 09:03:40,813  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:03:40,818  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585807206] to [/tmp/droid5.0.3-51_1344585803.droid]
+2012-08-10 09:03:41,072  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585807206/db]
+2012-08-10 09:03:41,120  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:03:41,120  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585807206
+2012-08-10 09:03:41,132  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585807206/db]
+2012-08-10 09:03:41,162  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585807206/db' shutdown.
+2012-08-10 09:03:41,163  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585807206/db]
+2012-08-10 09:03:43,858  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:03:45,651  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585824836/db]
+2012-08-10 09:03:52,155  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344585824836]: 941 ms
+2012-08-10 09:03:52,156  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:03:52,158  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585824836
+2012-08-10 09:03:52,167  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585824836/db]
+2012-08-10 09:03:52,239  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585824836/db' shutdown.
+2012-08-10 09:03:52,240  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585824836/db]
+2012-08-10 09:06:22,930  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:06:23,958  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:06:24,768  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585983929/db]
+2012-08-10 09:06:35,943  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:06:36,930  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:06:37,141  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:06:37,360  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:06:37,717  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:06:37,744  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:06:38,070  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:06:38,086  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:06:38,110  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:06:38,196  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:06:38,211  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:06:38,206  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:06:38,361  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:06:38,370  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585983929/db]
+2012-08-10 09:06:38,741  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585983929/db' shutdown.
+2012-08-10 09:06:38,742  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585983929/db]
+2012-08-10 09:06:38,743  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:06:38,746  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344585983929] to [/tmp/droid5.0.3-51_1344585980.droid]
+2012-08-10 09:06:38,921  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344585983929/db]
+2012-08-10 09:06:38,970  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:06:38,971  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344585983929
+2012-08-10 09:06:38,985  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344585983929/db]
+2012-08-10 09:06:39,014  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344585983929/db' shutdown.
+2012-08-10 09:06:39,016  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344585983929/db]
+2012-08-10 09:06:41,791  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:06:43,503  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586002744/db]
+2012-08-10 09:06:49,492  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344586002744]: 819 ms
+2012-08-10 09:06:49,493  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:06:49,494  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586002744
+2012-08-10 09:06:49,504  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586002744/db]
+2012-08-10 09:06:49,555  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586002744/db' shutdown.
+2012-08-10 09:06:49,557  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586002744/db]
+2012-08-10 09:07:50,742  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:07:51,802  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:07:52,557  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586071780/db]
+2012-08-10 09:08:03,553  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:08:04,278  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:08:04,469  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:08:04,631  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:08:04,862  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:08:04,892  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:08:05,146  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:08:05,147  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:08:05,173  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:08:05,220  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:08:05,222  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:08:05,224  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:08:05,328  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:08:05,330  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586071780/db]
+2012-08-10 09:08:05,722  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586071780/db' shutdown.
+2012-08-10 09:08:05,723  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586071780/db]
+2012-08-10 09:08:05,724  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:08:05,727  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344586071780] to [/tmp/droid5.0.3-51_1344586067.droid]
+2012-08-10 09:08:05,972  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586071780/db]
+2012-08-10 09:08:06,028  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:08:06,029  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586071780
+2012-08-10 09:08:06,042  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586071780/db]
+2012-08-10 09:08:06,117  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586071780/db' shutdown.
+2012-08-10 09:08:06,118  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586071780/db]
+2012-08-10 09:08:08,879  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:08:10,648  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586089904/db]
+2012-08-10 09:08:16,699  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344586089904]: 915 ms
+2012-08-10 09:08:16,700  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:08:16,700  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586089904
+2012-08-10 09:08:16,713  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586089904/db]
+2012-08-10 09:08:16,782  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586089904/db' shutdown.
+2012-08-10 09:08:16,783  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586089904/db]
+2012-08-10 09:09:31,226  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:09:32,153  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:09:32,836  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586172127/db]
+2012-08-10 09:09:44,011  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:09:44,766  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:09:44,894  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:09:45,036  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:09:45,318  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:09:45,325  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:09:45,549  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:09:45,573  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:09:45,588  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:09:45,616  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:09:45,632  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:09:45,618  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:09:45,740  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:09:45,744  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586172127/db]
+2012-08-10 09:09:46,094  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586172127/db' shutdown.
+2012-08-10 09:09:46,096  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586172127/db]
+2012-08-10 09:09:46,097  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:09:46,102  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344586172127] to [/tmp/droid5.0.3-51_1344586168.droid]
+2012-08-10 09:09:46,356  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586172127/db]
+2012-08-10 09:09:46,410  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:09:46,411  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586172127
+2012-08-10 09:09:46,427  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586172127/db]
+2012-08-10 09:09:46,478  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586172127/db' shutdown.
+2012-08-10 09:09:46,478  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586172127/db]
+2012-08-10 09:09:49,381  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:09:51,284  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586190436/db]
+2012-08-10 09:09:57,656  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344586190436]: 925 ms
+2012-08-10 09:09:57,657  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:09:57,657  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586190436
+2012-08-10 09:09:57,670  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586190436/db]
+2012-08-10 09:09:57,719  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586190436/db' shutdown.
+2012-08-10 09:09:57,721  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586190436/db]
+2012-08-10 09:11:17,368  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:11:18,276  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:11:18,937  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586278251/db]
+2012-08-10 09:11:29,912  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:11:30,721  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:11:30,853  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:11:31,018  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:11:31,257  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:11:31,258  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:11:31,476  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:11:31,482  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:11:31,493  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:11:31,555  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:11:31,557  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:11:31,557  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:11:31,656  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:11:31,658  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586278251/db]
+2012-08-10 09:11:31,978  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586278251/db' shutdown.
+2012-08-10 09:11:31,979  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586278251/db]
+2012-08-10 09:11:31,980  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:11:31,982  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344586278251] to [/tmp/droid5.0.3-51_1344586274.droid]
+2012-08-10 09:11:32,184  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586278251/db]
+2012-08-10 09:11:32,229  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:11:32,231  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586278251
+2012-08-10 09:11:32,237  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586278251/db]
+2012-08-10 09:11:32,267  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586278251/db' shutdown.
+2012-08-10 09:11:32,268  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586278251/db]
+2012-08-10 09:11:34,913  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:11:36,714  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586295849/db]
+2012-08-10 09:11:42,852  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344586295849]: 893 ms
+2012-08-10 09:11:42,853  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:11:42,854  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586295849
+2012-08-10 09:11:42,865  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586295849/db]
+2012-08-10 09:11:42,917  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586295849/db' shutdown.
+2012-08-10 09:11:42,917  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586295849/db]
+2012-08-10 09:12:28,707  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:12:29,760  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:12:30,501  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586349721/db]
+2012-08-10 09:12:41,967  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:12:42,722  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:12:42,827  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:12:42,991  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:12:43,241  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:12:43,281  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:12:43,509  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:12:43,513  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:12:43,542  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:12:43,584  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:12:43,587  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:12:43,586  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:12:43,691  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:12:43,695  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586349721/db]
+2012-08-10 09:12:44,053  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586349721/db' shutdown.
+2012-08-10 09:12:44,054  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586349721/db]
+2012-08-10 09:12:44,055  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:12:44,060  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344586349721] to [/tmp/droid5.0.3-51_1344586346.droid]
+2012-08-10 09:12:44,269  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586349721/db]
+2012-08-10 09:12:44,311  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:12:44,317  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586349721
+2012-08-10 09:12:44,324  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586349721/db]
+2012-08-10 09:12:44,429  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586349721/db' shutdown.
+2012-08-10 09:12:44,430  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586349721/db]
+2012-08-10 09:12:47,117  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:12:49,087  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586368208/db]
+2012-08-10 09:12:55,419  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344586368208]: 930 ms
+2012-08-10 09:12:55,420  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:12:55,420  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586368208
+2012-08-10 09:12:55,430  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586368208/db]
+2012-08-10 09:12:55,480  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586368208/db' shutdown.
+2012-08-10 09:12:55,481  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586368208/db]
+2012-08-10 09:13:45,807  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:13:46,765  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:13:47,535  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586426740/db]
+2012-08-10 09:13:58,776  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:13:59,565  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:13:59,674  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:13:59,806  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:14:00,024  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:14:00,050  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:14:00,265  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:14:00,273  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:14:00,316  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:14:00,383  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:14:00,386  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:14:00,385  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:14:00,495  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:14:00,498  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586426740/db]
+2012-08-10 09:14:00,899  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586426740/db' shutdown.
+2012-08-10 09:14:00,900  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586426740/db]
+2012-08-10 09:14:00,901  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:14:00,906  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344586426740] to [/tmp/droid5.0.3-51_1344586422.droid]
+2012-08-10 09:14:01,128  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586426740/db]
+2012-08-10 09:14:01,177  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:14:01,177  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586426740
+2012-08-10 09:14:01,189  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586426740/db]
+2012-08-10 09:14:01,236  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586426740/db' shutdown.
+2012-08-10 09:14:01,237  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586426740/db]
+2012-08-10 09:14:04,112  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:14:05,760  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344586444983/db]
+2012-08-10 09:14:12,133  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344586444983]: 903 ms
+2012-08-10 09:14:12,134  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:14:12,135  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344586444983
+2012-08-10 09:14:12,145  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344586444983/db]
+2012-08-10 09:14:12,192  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344586444983/db' shutdown.
+2012-08-10 09:14:12,193  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344586444983/db]
+2012-08-10 09:42:22,458  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:42:23,312  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 09:42:23,966  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344588143286/db]
+2012-08-10 09:42:35,188  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 09:42:36,002  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 09:42:36,157  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 09:42:36,309  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 09:42:36,518  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 09:42:36,521  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 09:42:36,721  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 09:42:36,728  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 09:42:36,761  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 09:42:36,796  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 09:42:36,799  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 09:42:36,798  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 09:42:36,917  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 09:42:36,919  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344588143286/db]
+2012-08-10 09:42:37,091  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344588143286/db' shutdown.
+2012-08-10 09:42:37,092  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344588143286/db]
+2012-08-10 09:42:37,093  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 09:42:37,096  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344588143286] to [/tmp/droid5.0.3-51_1344588139.droid]
+2012-08-10 09:42:37,346  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344588143286/db]
+2012-08-10 09:42:37,412  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 09:42:37,417  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344588143286
+2012-08-10 09:42:37,432  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344588143286/db]
+2012-08-10 09:42:37,503  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344588143286/db' shutdown.
+2012-08-10 09:42:37,503  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344588143286/db]
+2012-08-10 09:42:40,127  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 09:42:41,847  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344588161062/db]
+2012-08-10 09:42:47,619  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344588161062]: 892 ms
+2012-08-10 09:42:47,619  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 09:42:47,620  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344588161062
+2012-08-10 09:42:47,629  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344588161062/db]
+2012-08-10 09:42:47,677  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344588161062/db' shutdown.
+2012-08-10 09:42:47,679  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344588161062/db]
+2012-08-10 10:22:58,418  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 10:22:59,326  INFO [main] ProfileInstance:246 - Attempting state change [INITIALISING] to [VIRGIN]
+2012-08-10 10:22:59,988  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344590579302/db]
+2012-08-10 10:23:11,019  INFO [main] ProfileInstance:246 - Attempting state change [VIRGIN] to [RUNNING]
+2012-08-10 10:23:11,749  INFO [core-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/471280.pdf]
+2012-08-10 10:23:11,834  INFO [pool-2-thread-1] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/686969.pdf]
+2012-08-10 10:23:12,010  INFO [core-thread-10] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/375118.pdf]
+2012-08-10 10:23:12,270  INFO [core-thread-9] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/803945.pdf]
+2012-08-10 10:23:12,274  INFO [core-thread-8] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/README]
+2012-08-10 10:23:12,476  INFO [core-thread-6] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/664428.pdf]
+2012-08-10 10:23:12,478  INFO [core-thread-7] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/767115.pdf]
+2012-08-10 10:23:12,520  INFO [core-thread-5] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/716919.pdf]
+2012-08-10 10:23:12,536  INFO [core-thread-4] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/475990.pdf]
+2012-08-10 10:23:12,544  INFO [core-thread-3] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/431304.pdf]
+2012-08-10 10:23:12,543  INFO [core-thread-2] ResultHandlerImpl:59 - handling result for job [file:/home/davetaz/ref/govdocs_selected/PDF_1/757667.pdf]
+2012-08-10 10:23:12,640  INFO [pool-2-thread-1] ProfileInstance:246 - Attempting state change [RUNNING] to [FINISHED]
+2012-08-10 10:23:12,643  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344590579302/db]
+2012-08-10 10:23:12,954  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344590579302/db' shutdown.
+2012-08-10 10:23:12,956  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344590579302/db]
+2012-08-10 10:23:12,957  INFO [main] ProfileInstance:246 - Attempting state change [FINISHED] to [SAVING]
+2012-08-10 10:23:12,959  INFO [main] ProfileDiskAction:61 - Saving profile [/home/davetaz/.droid/profiles/1344590579302] to [/tmp/droid5.0.3-51_1344590576.droid]
+2012-08-10 10:23:13,185  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344590579302/db]
+2012-08-10 10:23:13,228  INFO [main] ProfileInstance:246 - Attempting state change [SAVING] to [FINISHED]
+2012-08-10 10:23:13,237  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344590579302
+2012-08-10 10:23:13,243  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344590579302/db]
+2012-08-10 10:23:13,280  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344590579302/db' shutdown.
+2012-08-10 10:23:13,281  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344590579302/db]
+2012-08-10 10:23:15,846  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
+2012-08-10 10:23:17,602  INFO [main] DerbyPooledDataSource:41 - Booting database [jdbc:derby:/home/davetaz/.droid/profiles/1344590596878/db]
+2012-08-10 10:23:23,668  INFO [pool-1-thread-1] ExportManagerImpl:146 - Time for profile [1344590596878]: 876 ms
+2012-08-10 10:23:23,669  INFO [pool-1-thread-1] ExportManagerImpl:157 - Closing destination
+2012-08-10 10:23:23,669  INFO [main] ProfileManagerImpl:100 - Closing Profile: 1344590596878
+2012-08-10 10:23:23,680  INFO [main] DerbyPooledDataSource:60 - Closing database [jdbc:derby:/home/davetaz/.droid/profiles/1344590596878/db]
+2012-08-10 10:23:23,726  INFO [main] DerbyPooledDataSource:68 - Database '/home/davetaz/.droid/profiles/1344590596878/db' shutdown.
+2012-08-10 10:23:23,728  INFO [main] DerbyPooledDataSource:69 - Database closed [jdbc:derby:/home/davetaz/.droid/profiles/1344590596878/db]

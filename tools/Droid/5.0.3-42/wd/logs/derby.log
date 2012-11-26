@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+2012-08-10 09:23:18.097 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-0139-0fd8-4f5b-000001856068
+on database directory /home/davetaz/.droid/profiles/1344590596878/db  
+
+Database Class Loader started - derby.database.classpath=''
+
+2012-08-10 09:23:23.698 GMT:
+Shutting down instance a816c00e-0139-0fd8-4f5b-000001856068
+----------------------------------------------------------------

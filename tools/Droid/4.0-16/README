@@ -1,0 +1,2 @@
+java -jar droid.jar -s $relative_path/DROID_SignatureFile_V50.xml -l $file
+java -jar droid.jar -l /home/davetaz/open_planets_ref/data/000/ -s /home/davetaz/open_planets_ref/tools/Droid/4.0/DROID_SignatureFile_V50.xml > /tmp/droid_4.0-50.raw
