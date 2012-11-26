@@ -3,24 +3,82 @@ Requirements
 * php-cli
 * php-mysql
 * mysql-server
+* openjdk-6-jre
+* apache2
+* libapache2-mod-php5
 
-Synopsis
-========
+Installation (Debian/Ubuntu)
+============================
+apt-get install php5-mysql php5-cli mysql-server libapache2-mod-php5 openjdk-6-jre
+
+Configuration 
+==============
+
+# 1 - Create and Configure the Database
+--------------------------
+
 cd database_structure
 echo "create database opf_ref" | mysql -u root
 mysql -u root opf_ref < opf_ref.sql
 cd ..
+
+cd bin
+# edit settings.php to fill in correct values
+
+cd ..
+cd cfg
+# edit database_connector.php to match settings.php
+
+# TODO remove database_connector.php in next version
+
+
+# 2 - Configure the Tools
+-------------------------
+
+# Make all the old versions of file (./configure && ./make)
+cd tools/file
+php make.php
+
+# Configure DROID
+cd tools/Droid
+
+# Enter any Droid 5 directory and run droid once to create your local .droid profile in ~/.droid
+cp -r signature_files ~/.droid
+
+# Enter any Droid 6 directory and run droid once to create your local .droid6 profile in ~/.droid6
+cp -r signature_files container_sigs ~/.droid6
+
+# WARNING & TODO
+# Droid 6.0 appears to not work with the version of db-derby that now ships with ubuntu LTS
+# I tried following the instructions from http://db.apache.org/derby/docs/dev/getstart/tgs26250.html however these do not appear to help.
+
+# edit java_paths.php and set them all to the correct locations of things
+
+# 3 - Import the tools
+----------------------
+
 cd bin
 php import_tool.php absolute_path/tools/file/INFO
 
-CREATE SOME DATA IN THE DATA DIRECTORY (pref in a new dir e.g. mydata1)
+SYNOPSIS
+========
+
+# CREATE SOME DATA IN THE DATA DIRECTORY (pref in a new dir e.g. mydata1)
 
 php run_scan.php absolute_path/data/mydata1/
 
-php create_rdf.php (creates rdf in the www directory, add it to an rdf store and navigate the nice pretty linked data)
+php sameas_processor.php
 
-About Tools
-==========
+cd /var/www
+ln -s $root_path/ref/bin/produce_plot.php index.php
+
+# Open http://your_server/index.php?path=mydata1/PDF_1
+# where the path is the think you passed to run_scan relatively.
+
+
+About The Tools
+================
+
 Version numbers are:
  * Major.Minor.Bugfix-Signature_File_Version
 
@@ -57,5 +115,3 @@ Triples table
 
 =======
 Explore, have fun, but use the data, don't extend this code too much, there is no point unless you want to generate a whole load more data!
-
-data data data
