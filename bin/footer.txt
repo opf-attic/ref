@@ -1,0 +1,38 @@
+	plotOptions: {
+                spline: {
+                    lineWidth: 4,
+                    states: {
+                        hover: {
+                            lineWidth: 5
+                        }
+                    },
+                    marker: {
+                        enabled: true,
+                        radius: 7,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                symbol: 'circle',
+                                radius: 5,
+                                lineWidth: 1
+                            }
+                        }
+                    }
+                }
+            },
+            navigation: {
+ 	            menuItemStyle: {
+                    fontSize: '10px'
+                }
+            }
+        });
+    });
+    
+});
+//]]>  
+
+</script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+

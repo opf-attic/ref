@@ -1,12 +1,13 @@
 <?php
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
+	error_reporting( E_ALL ^ E_NOTICE );
+	
 	$opf_ontology = "http://data.openplanetsfoundation.org/ref/ontology/#";
 	$rdf_prefix = "http://data.openplanetsfoundation.org/ref/";
 
-	ini_set('include_path','.:../:../lib/:../etc/');
+	ini_set('include_path','../cfg/');
 	require_once('database_connector.php');
-	require_once('rdf_functions.inc.php');
+	require_once('../www/inc/rdf_functions.inc.php');
 
 	$query = 'select id,name,relative_full_path from files;';
 	
@@ -15,7 +16,9 @@
 	while ($array = mysql_fetch_array($res)) {
 		$files_agg[] = $rdf_prefix . $array["relative_full_path"];
 		
-		$main[$array["relative_full_path"]] = '<rdf:Description rdf:about="' . $rdf_prefix . $array["relative_full_path"] . '"' . ">\n";
+		$main[$array["relative_full_path"]] .= '<rdf:Description rdf:about="' . $rdf_prefix . $array["relative_full_path"] . '"' . ">\n";
+		$string = '<rdf:type rdf:resource="http://data.openplanetsfoundation.org/schema/ref/type/file"/>';
+		$main[$array["relative_full_path"]] .= "\t" . $string . "\n";
 
 		process_file($array["id"],$array["relative_full_path"]);
 		$query2 = "select id,datestamp,tool_id,raw_result_id from results where file_id=" . $array["id"] . ";";
@@ -26,13 +29,14 @@
 	}
 	process_results();
 	process_tools();
-		
 	foreach($main as $path => $data) {
 		$file = "../www/$path.rdf";
 		$dir = "../www/" . substr($path,0,strrpos($path,"/"));
 		if ($dirs[$dir] < 1) {
-			exec('rm -fR ' . $dir);
-			$dirs[$dir] = 1;
+			if ($dir != "../www/") {
+				exec('rm -fR ' . $dir);
+				$dirs[$dir] = 1;
+			}
 		}
 		exec('mkdir -p ' . $dir);
 		$handle = fopen($file,"w");
@@ -40,13 +44,16 @@
 		fwrite($handle,$data);
 		fwrite($handle,rdf_footers());
 		fclose($handle);
-	}
+	}	
+
 	foreach($results as $path => $data) {
 		$file = "../www/$path.rdf";
 		$dir = "../www/" . substr($path,0,strrpos($path,"/"));
 		if ($dirs[$dir] < 1) {
-			exec('rm -fR ' . $dir);
-			$dirs[$dir] = 1;
+			if ($dir != "../www/") {
+				exec('rm -fR ' . $dir);
+				$dirs[$dir] = 1;
+			}
 		}
 		exec('mkdir -p ' . $dir);
 		$handle = fopen($file,"w");
@@ -58,9 +65,9 @@
 		fclose($handle);
 	}
 
-	process_agg($files_agg,"data");
-	process_agg($tools_agg,"tools");
-	process_agg($hits_agg,"hit");
+#	process_agg($files_agg,"data");
+#	process_agg($tools_agg,"tools");
+	#process_agg($hits_agg,"hit");
 	process_agg($results_agg,"results");
 
 	function process_agg($agg,$path) {
@@ -89,7 +96,11 @@
 		global $main, $results, $rdf_prefix, $extensions_done;
 
 		$extension = substr($path,strrpos($path,".")+1,strlen($path));
-		$results["extension/" . $extension] .= "\t" . '<ore:aggregates rdf:resource="' . $rdf_prefix . $path .'"' . "/>\n";
+		$string = '<rdf:type rdf:resource="http://data.openplanetsfoundation.org/schema/ref/type/extension_profile"/>';
+		if (strpos($results["extension/" . $extension],$string) == false) {
+			@$results["extension/" . $extension] .= "\t" . $string . "\n";
+		}
+		@$results["extension/" . $extension] .= "\t" . '<ore:aggregates rdf:resource="' . $rdf_prefix . $path .'"' . "/>\n";
 		if ($extensions_done[$extension] < 1) {
 			@$results["extension/index"] .= "\t" . '<ore:aggregates rdf:resource="' . $rdf_prefix . 'extension/' . $extension . '"' . "/>\n";
 			$extensions_done[$extension] = 1;
@@ -97,11 +108,20 @@
 
 		$query = "select id,datestamp,tool_id,raw_result_id from results where file_id=" . $id . ";";
 		$res = mysql_query($query);
-
+		
 		while ($array = mysql_fetch_array($res)) {
-			$main[$path] .= "\t" . '<opf-ref:has-result rdf:resource="' . $rdf_prefix . "results/" . $array["id"] . '"' . "/>\n";
-			$results["results/" . $array["id"]] .= "\t" . '<opf-ref:uses-tool rdf:resource="' . $rdf_prefix . 'tools/' . $array["tool_id"] . '"' . "/>\n";
-			$results["results/" . $array["id"]] .= "\t" . '<opf-ref:scantime>' . date(DATE_RFC822,$array["datestamp"]) . "</opf-ref:scantime>\n";
+			$main[$path] .= "\t" . '<opf-ref:hasResult rdf:resource="' . $rdf_prefix . "result/" . $array["id"] . '"' . "/>\n";
+			$string = '<opf-ref:producedBy rdf:resource="' . $rdf_prefix . 'tools/' . $array["tool_id"] . '"' . "/>";
+			if (strpos($results["result/" . $array["id"]],$string) !== false) {
+			} else {
+				$results["result/" . $array["id"]] .= "\t" . $string . "\n";
+			}
+			$string = '<rdf:type rdf:resource="http://data.openplanetsfoundation.org/schema/ref/result"/>';
+			if (strpos($results["result/" . $array["id"]],$string) !== false) {
+			} else {
+				$results["result/" . $array["id"]] .= "\t" . $string . "\n";
+			}
+			#$results["result/" . $array["id"]] .= "\t" . '<opf-ref:scantime>' . date(DATE_RFC822,$array["datestamp"]) . "</opf-ref:scantime>\n";
 		}
 	}
 
@@ -133,6 +153,7 @@
 			$tools_agg[] = $rdf_prefix . $path;
 			$results[$path] .= "\t" . '<rdfs:label>' . $array['name'] . '</rdfs:label>' . "\n";
 			$results[$path] .= "\t" . '<opf-ref:version>' . $array['version'] . '</opf-ref:version>' . "\n";
+			$results[$path] .= "\t" . '<rdf:type rdf:resource="http://data.openplanetsfoundation.org/schema/ref/tool"/>' . "\n";
 		}
 	}
 	

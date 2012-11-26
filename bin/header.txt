@@ -1,0 +1,41 @@
+<script type='text/javascript'>//<![CDATA[ 
+
+$(function () {
+    var chart;
+    $(document).ready(function() {
+        chart = new Highcharts.Chart({
+            lang: {
+		getdata: "Download Source Data"
+	    },
+	    chart: {
+                renderTo: 'container',
+                type: 'spline'
+            },
+	    tooltip: {
+                formatter: function() {
+                        return this.point.name;
+                }
+            },
+            xAxis: {
+                type: 'datetime'
+            },
+            title: {
+                text: 'File Identification for PDF Files'
+            },
+            subtitle: {
+                text: '10 Files of supposed Type PDF 1.4 identified using 65 versions of 5 tools'
+            },
+	    exporting: {
+		buttons: {
+		   custom: {
+			symbol: 'diamond',
+			x: -62,
+			symbolFill: '#B5C9DF',
+                	hoverSymbolFill: '#779ABF',
+                	_titleKey: 'getdata',
+                	onclick: function() {
+                    		window.location = 'data.rdf';
+                	}
+            	   }
+        	}
+    	   },

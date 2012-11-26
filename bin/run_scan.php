@@ -1,10 +1,9 @@
 <?php
-	error_reporting(E_ERROR | E_WARNING | E_PARSE);
-	
+
 	$count = 0;
-	
-	ini_set('include_path','.:../:../lib/:../etc/');
-	require_once('database_connector.php');
+	ini_set('include_path','../');
+	require_once('cfg/database_connector.php');
+	require_once('../www/inc/bxmlio.inc.php');
 
 	if (@($argv[1] === null)) {
 		echo "No path specified:\n\nUsage:\n\tphp run_scan.php [/directory/of/files/ or /path/to/file.foo]\n\n";
@@ -19,11 +18,6 @@
 		exit;
 	}
 
-	if ($tool_id != "") {
-		run_tool($tool_id,$path);
-		exit();
-	}
-
 	$tool_query = "SELECT id,name,version from tools order by id ASC;";
 	$res = mysql_query($tool_query);
 	
@@ -33,10 +27,29 @@
 		echo "Please install some tools and then run the import_tool script to update the database\n\n";
 		exit;
 	}
+	$i=0;	
+	while ($row = mysql_fetch_array($res)) {
+		$ids[] = $row["id"];
+		$i++;
+	}
+	
+	if ($tool_id != "") {
+		if (strtolower($tool_id) == "a") {
+			foreach($ids as $tool_id) {
+				$cmd = "php run_scan.php $path $tool_id";
+				system($cmd,$ret);
+			}
+		} else {
+			run_tool($tool_id,$path);
+		}		
+		exit();
+	}
 	
 	echo "\n";
 	echo "Please select a tool with which to do this scan:\n\n";
 
+	$tool_query = "SELECT id,name,version from tools order by id ASC;";
+	$res = mysql_query($tool_query);
 	$i=0;	
 	echo " A : All Tools\n";
 	while ($row = mysql_fetch_array($res)) {
