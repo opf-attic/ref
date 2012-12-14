@@ -1,0 +1,89 @@
+DROID 5 Installation & Technical Reference
+==========================================
+
+
+Introduction
+------------
+This document describes the installation procedure for DROID 5 on Windows, Unix/Linux and Mac OS X platforms. 
+
+It describes the steps necessary to launch the DROID application in various environments, and the appendix give details of the directory and file structure present in DROID’s temporary working area.
+
+
+Prerequisites
+-------------
+A java runtime environment must be present on the system. DROID requires !!Sun JRE 1.6!! on Windows and Unix/Linux systems, and Apple JRE 1.6 or greater on Mac OS X systems.  
+
+The launch scripts require that the java executable is accessible from the search path (the PATH environment variable).
+
+Please note that Apple only provide JRE 1.6 on OS/X Snow Leopard or higher, although there are third-party implementations which are possible to install on earlier versions of OS/X.
+
+
+Distribution
+------------
+DROID 5 is distributed as a zip archive containing all binaries and scripts needed to run the application, or as a source-code distribution allowing developers to view and modify the code. 
+ 
+
+License
+-------
+
+DROID is released under the open-source BSD License, which permits the use and re-distribution of DROID as released by the National Archives by anyone.  It also permits the source code of DROID to be modified or included in other products, subject to the terms of the BSD License.  
+
+Please note that the above text is only a rough guide to what the license permits.  Please see the DROID help file for the full license details and the licenses of third-party components distributed with DROID.
+
+
+Installation
+------------
+
+Unpack the contents of the distribution zip file to any writable directory.  While running, DROID does not write any files to its installation directory, so this directory does not have to be writable by droid users, only by the user doing the installation.  DROID does require write access to the user’s home directory.  It creates a directory called .droid, into which it places temporary files and user configuration files.
+Uninstallation.
+To uninstall the DROID software, simply delete the directory into which it was installed.  
+
+While running, DROID creates configuration and temporary files in the user’s home directory, under the .droid directory.  If you wish to completely remove all traces of DROID from a system, you must also delete the .droid directories under each user’s home folder that ran droid.
+
+
+Launching
+---------
+Windows:
+The GUI application may be launched by running the droid-gui.bat file. This file may be modified by users to configure different memory settings or other JVM options.
+
+The command line application may be launched by executing droid.bat with its command line options.
+
+Unix/Linux:
+The GUI application may be launched by running the droid-gui.sh file. This file may be modified by users to configure different memory settings or other JVM options.
+
+The command line application may be launched by executing droid.sh with its command line options.
+
+MAC OS X:
+The GUI application may be launched by running the droid-gui-mac.sh file. This file may be modified by users to configure different memory settings or other JVM options.
+
+The command line application may be launched by executing droid.sh with its command line options.
+
+
+Working directory
+-----------------
+DROID does not require any environment variables to be set. By default, DROID creates a work directory named .droid in the current user’s home directory. 
+
+If there is an environment variable named DROID_WORK, then droid will use the directory specified by this environment variable as its work directory.
+
+If a system property named DROID_WORK is set (by specifying such on the command line) then DROID will use the value of this property as its work directory. Any DROID_WORK environment variable will be ignored.
+
+If neither a system property nor environment variable for DROID-WORK have been set, then DROID will use a .droid directory in the users’ home directory as its work directory.
+
+
+Working directory files
+-----------------------
+
+DROID’s working directory contains the following files:
+
+droid.properties	global configuration
+
+logs/droid.log		droid’s global log file. By default, this log will roll over when it reaches 10MB in size.
+
+logs/derby.log		the internal database logs to this file
+
+
+profiles/		all in-progress profiles are contained here. Subdirectories exist for each open profile, named using the timestamp when they were created.
+
+signature_files/	droid will have access to any PRONOM compliant signature files in this directory.
+
+tmp/			DROID uses this directory to temporarily unpack archive files which are too large to be entirely contained in its internal cache.  They are deleted after they are no longer needed for file format identification.

@@ -1,8 +1,0 @@
-2012-08-13 15:14:25,436  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 15:14:39,874  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 15:14:45,164  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 17:08:58,556  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 17:12:33,369  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 17:12:53,236  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 17:13:50,420  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
-2012-08-13 17:16:09,567  INFO [main] ReflectionServiceFactoryBean:430 - Creating Service {http://pronom.nationalarchives.gov.uk}PronomServiceService from class uk.gov.nationalarchives.pronom.PronomService
