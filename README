@@ -41,6 +41,7 @@ php make.php
 
 # Configure DROID
 cd tools/Droid
+./relink.sh
 
 # Enter any Droid 5 directory and run droid once to create your local .droid profile in ~/.droid
 cp -r signature_files ~/.droid
