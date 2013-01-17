@@ -3,7 +3,7 @@
 	$count = 0;
 	ini_set('include_path','../');
 	require_once('cfg/database_connector.php');
-	require_once('../www/inc/bxmlio.inc.php');
+	require_once('inc/bxmlio.inc.php');
 
 	if (@($argv[1] === null)) {
 		echo "No path specified:\n\nUsage:\n\tphp run_scan.php [/directory/of/files/ or /path/to/file.foo]\n\n";
@@ -36,8 +36,10 @@
 	if ($tool_id != "") {
 		if (strtolower($tool_id) == "a") {
 			foreach($ids as $tool_id) {
-				$cmd = "php run_scan.php $path $tool_id";
-				system($cmd,$ret);
+				if (strtolower($tool_id) != "a") {
+					$cmd = "php run_scan.php $path $tool_id";
+					system($cmd,$ret);
+				}
 			}
 		} else {
 			run_tool($tool_id,$path);

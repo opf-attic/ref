@@ -7,7 +7,7 @@
 
 	ini_set('include_path','../cfg/');
 	require_once('database_connector.php');
-	require_once('../www/inc/rdf_functions.inc.php');
+	require_once('inc/rdf_functions.inc.php');
 
 	$query = 'select id,name,relative_full_path from files;';
 	

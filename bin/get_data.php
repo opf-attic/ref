@@ -6,7 +6,7 @@
 	MYSQL_CONNECT($server, $cuser, $ppassword) or die ( "<H3>Server unreachable</H3>");
 	MYSQL_SELECT_DB($database) or die ( "<H3>Database non existent</H3>");
 
-	$rdf_prefix = "http://data.openplanetsfoundation.org/";
+	$rdf_prefix = "http://data.openplanetsfoundation.org/ref/";
 
 	// Take the path to the files. 
 
@@ -24,20 +24,29 @@ if ($path == "" || $path == null) {
 		echo ("No Path defined");
 	}
 	
+	require_once($root_path . 'inc/rdf_functions.inc.php');
+	
 	$path = str_replace($strip_path,"",$path);
 
 	// GET ALL THE FILES AND NAMES FOR THE BOXES WE DRAW LATER
-	get_files($path);
+	$files = get_files($path);
 	asort($results);
+	$owl_results = process_owl();
+#print_r($results);
+#exit();
 
 	header("Content-type: text/xml");
 
-	require_once($root_path . 'www/inc/rdf_functions.inc.php');
-	
 	echo rdf_headers();
 	echo "\n";
+	echo describe_self();
 	foreach($results as $path => $data) {
 		echo('<rdf:Description rdf:about="' . $rdf_prefix . $path . '">' . "\n");
+		echo($data);
+		echo('</rdf:Description>' . "\n\n");
+	}
+	foreach($owl_results as $path => $data) {
+		echo('<rdf:Description rdf:about="' . $path . '">' . "\n");
 		echo($data);
 		echo('</rdf:Description>' . "\n\n");
 	}
@@ -45,10 +54,22 @@ if ($path == "" || $path == null) {
 	#print_r($results);
 	
 
+function describe_self() {
+	$string = '<rdf:Description rdf:about="">' . "\n";
+	$string .= "\t" . '<dc:title>Results Evaluation Framework - PDF 1.0</dc:title>' . "\n";
+	$string .= "\t" . '<dc:type>Dataset</dc:type>' . "\n";
+	$string .= "\t" . '<dc:rights>The Results Evaluation Framework Data. Copyright The Open Planets Foundation / Univeristy of Southampton / Dr David Tarrant. Licensed under a Creative Commons Attribution 3.0 Unported License</dc:rights>' . "\n";
+	$string .= "\t" . '<dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/deed.en_GB"/>' . "\n";
+	$string .= "\t" . '<dcterms:rightsHolder>The Open Planets Foundation</dcterms:rightsHolder>' . "\n";
+	$string .= "\t" . '<dcterms:rightsHolder>University of Southampton</dcterms:rightsHolder>' . "\n";
+	$string .= "\t" . '<dcterms:rightsHolder>Dr David Tarrant</dcterms:rightsHolder>' . "\n";
+	$string .= '</rdf:Description>' . "\n\n";
+	return $string;	
+}
 
 // GET ALL THE FILES
 function get_files($path) {
-	global $rdf_prefix,$main;
+	global $rdf_prefix,$results;
 	
 	$query = "select id,name,relative_full_path from files where files.relative_full_path like '$path%' and files.name != 'README';";
 	$res = mysql_query($query);
@@ -57,7 +78,7 @@ function get_files($path) {
 		
 #		$main[$array["relative_full_path"]] .= '<rdf:Description rdf:about="' . $rdf_prefix . $array["relative_full_path"] . '"' . ">\n";
 		$string = '<rdf:type rdf:resource="http://data.openplanetsfoundation.org/schema/ref/type/file"/>';
-		$main[$array["relative_full_path"]] .= "\t" . $string . "\n";
+		$results[$array["relative_full_path"]] .= "\t" . $string . "\n";
 
 		process_file($array["id"],$array["relative_full_path"]);
 		$query2 = "select id,datestamp,tool_id,raw_result_id from results where file_id=" . $array["id"] . ";";
@@ -67,11 +88,11 @@ function get_files($path) {
 	}
 	$res = ""; $query = ""; $array = "";
 	
-	return $main;
+	return $results;
 }
 
 function process_file($id,$path) {		
-	global $main, $results, $rdf_prefix,$global_done;
+	global $results, $rdf_prefix,$global_done;
 
 	$extension = substr($path,strrpos($path,".")+1,strlen($path));
 	$string = '<rdf:type rdf:resource="http://data.openplanetsfoundation.org/schema/ref/type/extension_profile"/>';
@@ -92,7 +113,7 @@ function process_file($id,$path) {
 		$string = "";
 		if (!$done[$array["id"]]) {
 			$done[$array["id"]] = true;
-			$main[$path] .= "\t" . '<opf-ref:hasResult rdf:resource="' . $rdf_prefix . "result/" . $array["id"] . '"' . "/>\n";
+			$results[$path] .= "\t" . '<opf-ref:hasResult rdf:resource="' . $rdf_prefix . "result/" . $array["id"] . '"' . "/>\n";
 			if (!$global_done[$array["id"]]) {
 				$global_done[$array["id"]] = true;
 				$results["result/" . $array["id"]] = process_result2("result/" . $array["id"],$results["result/" . $array["id"]]);
@@ -144,5 +165,76 @@ function process_tool($id) {
 	return $string;
 }
 
+function process_owl() {
+	global $rdf_prefix;
+	$string = "";
+	$query = "select subject, predicate, object from owl order by subject ASC;";
+	$res = mysql_query($query);
+	$done = array();
+	while ($array = mysql_fetch_array($res)) {
+		$subject = $array["subject"];
+		if (strpos($subject,":") !== false) {
+			$subject = get_long_from_short($subject);
+		} else {
+			$subject = $rdf_prefix . $subject;
+		}
+		$object = $array["object"];
+		if (strpos($object,":") !== false) {
+			$object = get_long_from_short($object);
+		} else {
+			$object = $rdf_prefix . $object;
+		}
+		if (!$done[$subject]) {
+			$string = "";
+			$done[$subject] = 1;
+			$sameAs = pellet_sameAs($subject);
+			for ($i=0;$i<count($sameAs);$i++) {
+				if ($sameAs[$i] != "" && $subject != $sameAs[$i]) {
+					$string .= "\t" . '<owl:sameAs rdf:resource="'.$sameAs[$i].'"/>' . "\n"; 
+				}
+			}	
+			$results[$subject] = $string;
+		}
+		if ($array["predicate"] != "owl:sameAs") {
+			$results[$subject] .= "\t" . '<' . $array["predicate"] . ' rdf:resource="'.$object.'"/>' . "\n";
+		}
+	}
+	return $results;
+}
 
+function pellet_sameAs($subject) {
+	$prefix = "http://data.openplanetsfoundation.org/ref/";
+	$file_string = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+		PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+		PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+		SELECT ?x
+		WHERE {
+			<".$subject."> owl:sameAs ?x 
+		}";
+	$handle = fopen("/tmp/query.sparql","w");
+	fwrite($handle,$file_string);
+	fclose($handle);
+	$dir = $root_path . "bin";
+	@chdir($dir);
+	$ret = array();
+	$cmd = 'sh pellet.sh query -o JSON -q /tmp/query.sparql owl.rdf';
+	exec($cmd,$ret);
+	unlink('/tmp/query.sparql');
+	$results = "";
+
+	$open = false;
+
+	$json = "";
+	for ($i=0;$i<count($ret);$i++) {
+		$json .= $ret[$i];
+	}
+	$stuff = json_decode($json,true);
+	$sub = $stuff["results"]["bindings"];
+	for ($i=0;$i<count($sub);$i++) {
+		$results[] = $sub[$i]["x"]["value"];
+	}
+	return $results;
+ 
+}
 ?>

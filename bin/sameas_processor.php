@@ -15,7 +15,7 @@ MYSQL_SELECT_DB($database) or die ( "<H3>Database non existent</H3>");
 createTable();
 #prepare4store();
 
-require_once('../www/inc/rdf_functions.inc.php');
+require_once('inc/rdf_functions.inc.php');
 
 $handle = fopen("owl.rdf","w");
 fwrite($handle,rdf_headers());
@@ -78,9 +78,16 @@ function populate4store() {
 function generateRDF($triples,$predicate) {
 	$string = "";
 	foreach ($triples as $subject => $array) {
+		if (strpos($subject,":") !== false) {
+			$subject = get_long_from_short($subject);
+		}
 		$string .= "\t\t" . '<rdf:Description rdf:about="'.$subject . '">' . "\n";
 		for($i=0;$i<count($array);$i++) {
-			$string .= "\t\t\t" . '<'. $predicate . ' rdf:resource="'. $array[$i] . '" />' . "\n";
+			$object = $array[$i];
+			if (strpos($object,":") !== false) {
+				$object = get_long_from_short($object);
+			}
+			$string .= "\t\t\t" . '<'. $predicate . ' rdf:resource="'. $object . '" />' . "\n";
 		}
 		$string .= "\t\t" . '</rdf:Description>' . "\n";
 	}
