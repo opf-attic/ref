@@ -1,9 +1,11 @@
 <?php
+	error_reporting( E_ALL ^ E_NOTICE );
 
 	$count = 0;
 	ini_set('include_path','../');
 	require_once('cfg/database_connector.php');
 	require_once('inc/bxmlio.inc.php');
+	require_once( 'inc/Thread.php' );
 
 	if (@($argv[1] === null)) {
 		echo "No path specified:\n\nUsage:\n\tphp run_scan.php [/directory/of/files/ or /path/to/file.foo]\n\n";
@@ -29,18 +31,19 @@
 	}
 	$i=0;	
 	while ($row = mysql_fetch_array($res)) {
-		$ids[] = $row["id"];
+		$ids[$row["id"]] = $row["name"];
 		$i++;
 	}
 	
 	if ($tool_id != "") {
 		if (strtolower($tool_id) == "a") {
-			foreach($ids as $tool_id) {
+			foreach($ids as $tool_id => $name) {
 				if (strtolower($tool_id) != "a") {
 					$cmd = "php run_scan.php $path $tool_id";
-					system($cmd,$ret);
+					$jobs[$name][] = $cmd; 
 				}
 			}
+			process_jobs($jobs);
 		} else {
 			run_tool($tool_id,$path);
 		}		
@@ -56,23 +59,89 @@
 	echo " A : All Tools\n";
 	while ($row = mysql_fetch_array($res)) {
 		echo " " . $row["id"] . " : " . $row["name"] . " (Version " . $row["version"] . ")\n";
-		$ids[] = $row["id"];
-		$i++;
 	}
 	echo "\n";
 	echo "Selection: ";
 
+	$tool_id = "";
 	$handle = fopen ("php://stdin","r");
 	$tool_id = trim(fgets($handle));
-
+	
 	if (strtolower($tool_id) == "a") {
-		foreach($ids as $tool_id) {
-			$cmd = "php run_scan.php $path $tool_id";
-			system($cmd,$ret);
+		foreach($ids as $tool_id => $name) {
+			if (strtolower($tool_id) != "a") {
+				$cmd = "php run_scan.php $path $tool_id";
+				$jobs[$name][] = $cmd; 
+			}
 		}
+		process_jobs($jobs);
 	} else {
 		run_tool($tool_id,$path);
 	}		
+
+function process_jobs($jobs) {
+	if( ! Thread::available() ) {
+		foreach ($jobs as $name => $array) {
+			for($i=0;$i<count($array);$i++) {
+				system($array[$i],$ret);
+			}
+		}
+	} else {
+		use_threads($jobs);
+	}
+}
+
+function paralel( $_cmd , $_thread_name ) {
+        if ($_cmd == "init" || $_cmd == "" ) {
+                return;
+        }
+        system($_cmd,$ret);
+}
+
+function use_threads($jobs) {
+	$total_count = 0;
+	foreach($jobs as $name => $array) {
+		${"t$name"} = new Thread( 'paralel' );	
+		${"t$name"}->start('init');
+		$total_count += count($array);
+	}
+	while (count($completed) < count($jobs)) {
+		$handle = fopen("threads","w");
+		fwrite($handle,time() . "\n");
+		foreach($jobs as $name => $array) {
+			if ($completed[$name]) {
+				fwrite($handle,"t$name : Done\n");
+				continue;
+			}
+			if (!${"t$name"}->isAlive()) {
+				fwrite($handle,"t$name : Available\n");
+				$job = array_shift($array);
+				if ($job == "") {
+					$completed[$name] = true;
+				} else {
+					${"t$name"}->start($job, $name);
+					$jobs[$name] = $array;
+				}
+			} else {
+				fwrite($handle,"t$name : Busy\n");
+			}
+		}
+		fclose($handle);
+		sleep(2);
+	}
+
+	$still_active = true;
+
+	while ($still_active) {
+		$still_active = false;
+		foreach($jobs as $name => $array) {
+			if (${"t$name"}->isAlive()) {
+				$still_active = true;
+			}
+		}
+	}
+	
+}
 
 function run_tool($tool_id, $path) {
 	$tool_query = "select name,version,relative_path from tools where id=$tool_id;";
@@ -99,6 +168,6 @@ function run_tool($tool_id, $path) {
 	
 	chdir($home_path);
 	
-	echo "DONE\n\n";
+	echo "DONE - " . $tool["name"] . " (" . $tool["version"] . ")\n";
 }
 ?>
