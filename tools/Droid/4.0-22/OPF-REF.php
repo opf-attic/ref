@@ -3,9 +3,8 @@
 function perform_scan($path,$tool_id) {
 	$now = time();
 	$report_file = "/tmp/droid4.0-16_$now.txt";
-	$cmd = "java -jar droid.jar -l $path > $report_file";
+	$cmd = "java -jar droid.jar -l $path > $report_file 2>/dev/null";
 	$ret = exec($cmd,$output);
-	echo "SCAN COMPLETE, processing results. \n\n";
 	process_results($path,$tool_id,$report_file);
 }
 	
@@ -18,7 +17,6 @@ function process_results($path,$tool_id,$report_file) {
 	while (($line = fgets($handle, 4096)) !== false) {
 		if (trim($line) == "==================================") {
 			if ($result) {
-				echo "processing result : " . $count . "\n";
 				process_result($path,$tool_id,$result);
 				$count++;
 			}
@@ -30,7 +28,6 @@ function process_results($path,$tool_id,$report_file) {
 		}
 	}
 	
-	echo "processing result : " . $count . "\n";
 	process_result($path,$tool_id,$result);
 	$count++;
 }

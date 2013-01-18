@@ -8,13 +8,9 @@ function perform_scan($path,$tool_id) {
 	require_once('../java_path.php');
 	$java_path = get_java_path_droid_5();
 	
-	$cmd = $java_path . 'java -jar droid-command-line-5.0.3.jar -s 37';
-	$ret = exec($cmd,$output);
-
-	$cmd = $java_path . 'java -jar droid-command-line-5.0.3.jar -a "'.$path.'" -p '.$report_file1;
-	$ret = exec($cmd,$output);
-	
-	$cmd = $java_path . "java -jar droid-command-line-5.0.3.jar -p $report_file1 -e $report_file2";
+	$cmd = $java_path . 'java -jar droid-command-line-5.0.3.jar -s 37 2>/dev/null >/dev/null';
+	$cmd .= ' && ' . $java_path . 'java -jar droid-command-line-5.0.3.jar -a "'.$path.'" -p '.$report_file1 . ' 2>/dev/null';	
+	$cmd .= ' && ' . $java_path . "java -jar droid-command-line-5.0.3.jar -p $report_file1 -e $report_file2" . ' 2>/dev/null'; 
 	$ret = exec($cmd,$output);
 
 	unlink($report_file1);

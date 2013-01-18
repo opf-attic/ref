@@ -32,13 +32,12 @@ function perform_scan($path,$tool_id) {
 		fclose($handle);
 	}
 	
-	$cmd = $java_path . 'java -jar droid-command-line-6.1.jar -x';
-        $ret = exec($cmd,$output);
+	$cmd = $java_path . 'java -jar droid-command-line-6.1.jar -x 2>/dev/null >/dev/null';
 	
-	$cmd = $java_path . 'java -jar droid-command-line-6.1.jar -a "'.$path.'" -p '.$report_file1;
-	$ret = exec($cmd,$output);
+	$cmd .= ' && ' . $java_path . 'java -jar droid-command-line-6.1.jar -a "'.$path.'" -p '.$report_file1 . ' 2>/dev/null >/dev/null';
 	
-	$cmd = $java_path . "java -jar droid-command-line-6.1.jar -p $report_file1 -e $report_file2";
+	$cmd .= ' && ' . $java_path . "java -jar droid-command-line-6.1.jar -p $report_file1 -e $report_file2" . ' 2>/dev/null >/dev/null';
+
 	$ret = exec($cmd,$output);
 
 	unlink($report_file1);
@@ -70,7 +69,6 @@ function get_container_file($container_path) {
 			if ($entry != "." && $entry != "..") {
 				$date = substr($entry,0,strrpos($entry,".xml"));
 				$date = substr($date,strrpos($date,"-")+1,strlen($date));
-				echo "Comparing $date to $compare \n";
 				if ($date <= $compare) {
 					$file = $entry;
 				}
