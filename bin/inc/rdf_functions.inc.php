@@ -639,6 +639,7 @@ function get_rdf_namespaces() {
 	$array["ror"] = "http://rorweb.com/0.1/";
 	$array["iana-mime"] = "http://id.iana.org/assignments/media-types/ontology/#";
 	$array["opf-ref"] = "http://data.openplanetsfoundation.org/ref/ontology/default/#";
+	$array["fitools"] = "http://data.openplanetsfoundation.org/ref/ontology/fitools/#";
 	$array["droid"] = "http://data.openplanetsfoundation.org/ref/ontology/droid/#";
         $array["file"] = "http://data.openplanetsfoundation.org/ref/ontology/file/#";
         $array["fido"] = "http://data.openplanetsfoundation.org/ref/ontology/fido/#";
