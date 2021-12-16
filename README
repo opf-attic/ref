@@ -1,3 +1,7 @@
+Vulnerability Warning
+=====================
+Be aware that this project is affected by the [log4j vulnerability](https://www.ncsc.gov.uk/information/log4j-vulnerability-what-everyone-needs-to-know). Please read and understand the issue before deploying or using this project.
+
 Requirements
 ============
 * php-cli
